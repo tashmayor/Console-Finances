@@ -98,3 +98,22 @@ var netChangeSum = 0;
 var least = ['', 9999999999999];
 var greatest = ['', 0];
 
+for (var i = 0; i < finances, length; i++) {
+  for (var j = 0; j < finances[i].length; j++) {
+    if (typeof finances[i][j] !== 'string') {
+      total += finances[i][j]
+      change = finances[i][j] - net;
+      net = finances[i][j];
+      netArray.push(change);
+
+      if (change > greatest[1]) {
+        greatest = [finances[i][0], finances[i][1]];
+      }
+
+      if (change < least[1]) {
+        least = [finances[i][0], finances[i][1]];
+      }
+    }
+  }
+}
+console.log(finances);
