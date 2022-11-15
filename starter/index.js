@@ -87,7 +87,14 @@ var finances = [
   ['Feb-2017', 671099]
 ];
 
+//heading
+console.log("Financial Analysis\n----------------")
+
 var average;
 var analysis;
 var net = 0;
 var netArray = [];
+var netChangeSum = 0;
+var least = ['', 9999999999999];
+var greatest = ['', 0];
+
